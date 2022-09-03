@@ -38,7 +38,7 @@ export default function Register() {
 			.then((response) => response.json())
 			.then((result) => {
 				const { code, message } = result;
-				if (code === 200) {
+				if (code === 201) {
 					router.push("/auth/login");
 				}
 				alert(message);
